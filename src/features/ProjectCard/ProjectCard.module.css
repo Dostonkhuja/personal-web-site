@@ -1,0 +1,25 @@
+.project-card {
+    border: 1px solid var(--accent);
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--bg-section);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card__title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.project-card__desc {
+    margin-bottom: 12px;
+}
+
+.project-card__link {
+    color: var(--accent);
+    text-decoration: none;
+}

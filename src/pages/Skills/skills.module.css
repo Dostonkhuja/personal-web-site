@@ -1,0 +1,113 @@
+.skills {
+    padding: 100px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.skills__title {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.skills__grid {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 70px;
+    justify-items: center;
+}
+
+.skills__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 18px;
+    background: var(--bg-section);
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.skills__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    background: var(--bg-nav);
+}
+
+.skills__card-logo {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 22px;
+    object-fit: contain;
+}
+
+.skills__card-name {
+    margin: 0 0 12px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.skills__card-level {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .skills__grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 32px;
+    }
+    .skills__title {
+        font-size: 2.2rem;
+        margin-bottom: 60px;
+    }
+    .skills__card {
+        padding: 26px;
+    }
+    .skills__card-logo {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 18px;
+    }
+    .skills__card-name {
+        font-size: 1.15rem;
+    }
+    .skills__card-level {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .skills__grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 28px;
+    }
+    .skills__title {
+        font-size: 1.9rem;
+        margin-bottom: 50px;
+    }
+    .skills__card {
+        padding: 22px;
+    }
+    .skills__card-logo {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 14px;
+    }
+    .skills__card-name {
+        font-size: 1.05rem;
+    }
+    .skills__card-level {
+        font-size: 0.9rem;
+    }
+}
