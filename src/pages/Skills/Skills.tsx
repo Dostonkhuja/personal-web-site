@@ -1,5 +1,5 @@
 import styles from "./Skills.module.css"
-import {skillsMock} from "../../entities/skill/model/skillsMock.ts";
+import {SkillCard, skillsMock} from "../../entities/skill";
 
 export default function Skills() {
     return (
@@ -7,12 +7,8 @@ export default function Skills() {
             <h2 className={styles.skills__title}>Skills</h2>
 
             <div className={styles.skills__grid}>
-                {skillsMock.map(skill => (
-                    <div key={skill.name} className={styles.skills__card}>
-                        <img src={skill.logo} alt={skill.name} className={styles["skills__card-logo"]} />
-                        <h4 className={styles["skills__card-name"]}>{skill.name}</h4>
-                        {skill.level && <span className={styles["skills__card-level"]}>{skill.level}</span>}
-                    </div>
+                {skillsMock.map(s => (
+                    <SkillCard key={s.name} skill={s} />
                 ))}
             </div>
         </section>

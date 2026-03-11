@@ -1,5 +1,4 @@
-import ProjectCard from "../../entities/Project/ui/ProjectCard.tsx";
-import {projects} from "../../entities/Project/model/projectsMock.ts";
+import {ProjectCard, projects} from "../../entities/Project";
 import styles from './project.module.css'
 
 export default function Projects() {

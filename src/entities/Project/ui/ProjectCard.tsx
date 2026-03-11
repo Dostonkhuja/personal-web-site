@@ -1,11 +1,11 @@
 import styles from "./ProjectCard.module.css"
-import type {ProjectTypes} from "../model/projectTypes.ts";
+import type {projectTypes} from "../model/projectTypes.ts";
 
 interface ProjectCardProps {
-    project: ProjectTypes
+    project: projectTypes
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps) {
     return (
         <div className={styles["project-card"]}>
             <h3 className={styles["project-card__title"]}>{project.name}</h3>

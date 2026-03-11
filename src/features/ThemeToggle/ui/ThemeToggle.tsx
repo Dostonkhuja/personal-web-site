@@ -5,7 +5,7 @@ interface ThemeToggleProps {
     toggleTheme: () => void
 }
 
-export default function ThemeToggle({ currentTheme, toggleTheme }: ThemeToggleProps) {
+export function ThemeToggle({ currentTheme, toggleTheme }: ThemeToggleProps) {
     return (
         <button
             className={styles["theme-toggle"]}

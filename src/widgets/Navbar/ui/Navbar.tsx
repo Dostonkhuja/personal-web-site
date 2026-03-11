@@ -1,10 +1,9 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import styles from "./navbar.module.css"
-import ThemeToggle from "../../features/ThemeToggle/ui/ThemeToggle.tsx"
-import { useTheme } from "../../features/ThemeToggle/model/useTheme.ts"
+import {ThemeToggle, useTheme} from "../../../features/ThemeToggle";
 
-export default function Navbar() {
+export function Navbar() {
     const { theme, toggleTheme } = useTheme()
     const [menuOpen, setMenuOpen] = useState(false)
 
