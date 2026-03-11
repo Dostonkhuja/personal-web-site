@@ -1,4 +1,4 @@
-import styles from "./ThemeToggle.module.css"
+import styles from "./themeToggle.module.css"
 
 interface ThemeToggleProps {
     currentTheme: "light" | "dark"

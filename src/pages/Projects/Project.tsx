@@ -1,18 +1,16 @@
-import ProjectCard from "../../features/ProjectCard/ProjectCard"
-import type {Project} from "../../entities/Project/project.ts";
-
-const projects: Project[] = [
-    { id: 1, name: "E-commerce App", description: "Online store using React & TS", link: "#" },
-    { id: 2, name: "Task Manager", description: "Manage tasks with React Hooks", link: "#" },
-    { id: 3, name: "Weather App", description: "Weather forecast using API", link: "#" }
-]
+import ProjectCard from "../../entities/Project/ui/ProjectCard.tsx";
+import {projects} from "../../entities/Project/model/projectsMock.ts";
+import styles from './project.module.css'
 
 export default function Projects() {
     return (
-        <section style={{ padding: "80px 20px" }}>
-            <h2 style={{ textAlign: "center", marginBottom: "40px" }}>Projects</h2>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "24px", justifyContent: "center" }}>
-                {projects.map(p => <ProjectCard key={p.id} project={p} />)}
+        <section className={styles.projects}>
+            <h2 className={styles.projects__title}>Projects</h2>
+
+            <div className={styles.projects__list}>
+                {projects.map((p) => (
+                    <ProjectCard key={p.id} project={p} />
+                ))}
             </div>
         </section>
     )

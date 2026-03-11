@@ -1,8 +1,8 @@
 import styles from "./ProjectCard.module.css"
-import type {Project} from "../../entities/Project/project.ts";
+import type {ProjectTypes} from "../model/projectTypes.ts";
 
 interface ProjectCardProps {
-    project: Project
+    project: ProjectTypes
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {

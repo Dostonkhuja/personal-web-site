@@ -1,14 +1,14 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import styles from "./Navbar.module.css"
-import ThemeToggle from "../../../features/ThemeToggle/ThemeToggle.tsx"
-import { useTheme } from "../../hooks/useTheme.ts"
+import styles from "./navbar.module.css"
+import ThemeToggle from "../../features/ThemeToggle/ui/ThemeToggle.tsx"
+import { useTheme } from "../../features/ThemeToggle/model/useTheme.ts"
 
 export default function Navbar() {
     const { theme, toggleTheme } = useTheme()
     const [menuOpen, setMenuOpen] = useState(false)
 
-    const handleLinkClick = () => setMenuOpen(false) // mobile link bosilganda menu yopilsin
+    const handleLinkClick = () => setMenuOpen(false)
 
     return (
         <nav className={styles.navbar}>
