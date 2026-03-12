@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom"
 import Projects from "../pages/Projects/Project.tsx";
 import Skills from "../pages/Skills/Skills.tsx";
+import {HomePage} from "../pages/Home/HomePage.tsx";
 
 export const AppRoutes = () => (
     <Routes>
-        {/*<Route path="/" element={<Home />} />*/}
+        <Route path="/" element={<HomePage />} />
         {/*<Route path="/about" element={<About />} />*/}
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />

@@ -89,3 +89,8 @@
         width: 100%;
     }
 }
+.activeLink {
+    color: var(--accent);           /* hozirgi sahifa rangini asosiy accent bilan beramiz */
+    font-weight: bold;              /* faol linkni ajratish */
+    border-bottom: 2px solid var(--accent);  /* ostiga chiziq qo‘yish */
+}
