@@ -1,0 +1,56 @@
+.contact {
+    padding: 80px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--text);
+}
+
+.text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 32px;
+    color: var(--text);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input,
+.textarea {
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--accent);
+    font-size: 1rem;
+    resize: none;
+}
+
+.textarea {
+    min-height: 120px;
+}
+
+.btn {
+    background: var(--accent);
+    color: white;
+    padding: 16px 36px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: var(--accent);
+    transform: scale(1.05);
+}

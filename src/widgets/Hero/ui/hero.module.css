@@ -95,6 +95,23 @@
     color: var(--text);
 }
 
+/* Primary button hover */
+.hero__btnPrimary:hover {
+    border: 1px solid var(--accent);
+    background: white;
+    color: var(--accent);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Secondary button hover */
+.hero__btnSecondary:hover {
+    background: var(--accent);
+    color: white;     
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
 @media (max-width: 768px) {
     .hero__avatar {
         width: 180px;

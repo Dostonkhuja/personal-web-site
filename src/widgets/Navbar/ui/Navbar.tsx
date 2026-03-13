@@ -1,25 +1,26 @@
 import { useState } from "react"
-import { Link, useLocation } from "react-router-dom"
-import styles from "./navbar.module.css"
+import { Link } from "react-scroll"
 import { ThemeToggle, useTheme } from "../../../features/ThemeToggle"
+import { navLinks } from "../../../entities/Navbar"
+import styles from "./navbar.module.css"
+import { useClickSound } from "../../../features/clickSound/useClickSound"
 
 export function Navbar() {
     const { theme, toggleTheme } = useTheme()
     const [menuOpen, setMenuOpen] = useState(false)
-    const location = useLocation()  // hozirgi route path
+    const [activeLink, setActiveLink] = useState(navLinks[0].to)
 
-    const handleLinkClick = () => setMenuOpen(false)
+    const playSound = useClickSound()  // hook
 
-    // link active bo‘lishini tekshiruvchi function
-    const isActive = (path:string) => location.pathname === path
+    const linkProps = { smooth: true, duration: 500, spy: true }
 
     return (
         <nav className={styles.navbar}>
-            <h2 className={styles.navbar__logo}>&lt;DastanWorks /&gt; </h2>
+            <h2 className={styles.navbar__logo}>&lt;DastanWorks /&gt;</h2>
 
             <button
                 className={styles.navbar__burger}
-                onClick={() => setMenuOpen(prev => !prev)}
+                onClick={() => { playSound(); setMenuOpen(prev => !prev) }}
                 aria-label="Toggle menu"
             >
                 {menuOpen ? "✕" : "☰"}
@@ -27,60 +28,19 @@ export function Navbar() {
 
             <div className={`${styles.navbar__right} ${menuOpen ? styles.active : ""}`}>
                 <ul className={styles.navbar__list}>
-                    <li>
-                        <Link
-                            to="/"
-                            className={`${styles.navbar__link} ${isActive("/") ? styles.activeLink : ""}`}
-                            onClick={handleLinkClick}
-                        >
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/about"
-                            className={`${styles.navbar__link} ${isActive("/about") ? styles.activeLink : ""}`}
-                            onClick={handleLinkClick}
-                        >
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/skills"
-                            className={`${styles.navbar__link} ${isActive("/skills") ? styles.activeLink : ""}`}
-                            onClick={handleLinkClick}
-                        >
-                            Skills
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/projects"
-                            className={`${styles.navbar__link} ${isActive("/projects") ? styles.activeLink : ""}`}
-                            onClick={handleLinkClick}
-                        >
-                            Projects
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/contact"
-                            className={`${styles.navbar__link} ${isActive("/contact") ? styles.activeLink : ""}`}
-                            onClick={handleLinkClick}
-                        >
-                            Contact
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/resume"
-                            className={`${styles.navbar__link} ${isActive("/resume") ? styles.activeLink : ""}`}
-                            onClick={handleLinkClick}
-                        >
-                            Resume
-                        </Link>
-                    </li>
+                    {navLinks.map(link => (
+                        <li key={link.to}>
+                            <Link
+                                to={link.to}
+                                className={`${styles.navbar__link} ${activeLink === link.to ? styles.activeLink : ""}`}
+                                {...linkProps}
+                                onSetActive={() => setActiveLink(link.to)}
+                                onClick={playSound}
+                            >
+                                <span onMouseEnter={playSound}>{link.label}</span>
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
                 <ThemeToggle currentTheme={theme} toggleTheme={toggleTheme} />
             </div>

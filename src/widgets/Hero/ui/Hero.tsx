@@ -1,13 +1,17 @@
 import styles from "./Hero.module.css";
-// import galaxy from "../../../shared/assets/background.png";
 import profile from "../../../shared/assets/myphoto.png";
+import { scroller } from "react-scroll"
 
 export function Hero() {
+
+    const handleScroll = (target: string) => {
+        scroller.scrollTo(target, { duration: 500, smooth: true })
+    }
+
     return (
         <div className={styles.hero} id="home">
             <div
                 className={styles.hero__background}
-                // style={{ backgroundImage: `url(${galaxy})` }}
             />
 
             <div className={styles.hero__container}>
@@ -22,8 +26,9 @@ export function Hero() {
                 </p>
 
                 <div className={styles.hero__actions}>
-                    <a href="#projects" className={styles.hero__btnPrimary}>View Projects</a>
-                    <a href="#contact" className={styles.hero__btnSecondary}>Contact</a>
+
+                    <div className={styles.hero__btnPrimary}  onClick={() => handleScroll("Projects")}>View Projects</div>
+                    <div  className={styles.hero__btnSecondary} onClick={() => handleScroll("Contact")}>Contact</div>
                 </div>
             </div>
         </div>

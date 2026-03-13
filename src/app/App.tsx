@@ -1,13 +1,16 @@
-import { BrowserRouter as Router } from "react-router-dom"
 import {AppRoutes} from "./Routes.tsx";
 import {Navbar} from "../widgets/Navbar";
+import {ContactButtons} from "../widgets/ContacButtons";
+import {Footer} from "../widgets/Footer";
 
 function App() {
     return (
-        <Router>
+        <>
+            <ContactButtons />
             <Navbar />
             <AppRoutes />
-        </Router>
+            <Footer />
+        </>
     )
 }
 

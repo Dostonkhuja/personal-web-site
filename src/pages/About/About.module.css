@@ -1,0 +1,38 @@
+.about {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--text);
+}
+
+.about__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 16px;
+}
+
+.about__btn {
+    background: var(--accent);
+    color: white;
+    padding: 16px 36px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 24px;
+    transition: all 0.3s;
+}
+
+.about__btn:hover {
+    background: white;
+    color: var(--accent);
+    transform: scale(1.05);
+}
