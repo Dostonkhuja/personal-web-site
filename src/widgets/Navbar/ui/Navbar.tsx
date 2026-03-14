@@ -16,7 +16,15 @@ export function Navbar() {
 
     return (
         <nav className={styles.navbar}>
-            <h2 className={styles.navbar__logo}>&lt;DastanWorks /&gt;</h2>
+            <div className={styles.navbar}>
+                <a href="/" className={styles.logoLink}>
+                    <img src="/DS_logo.svg" alt="DS Logo" className={styles.logo}/>
+                </a>
+                <h2 className={styles.navbarLogo}>
+                    &lt;DastanWorks /&gt;
+                </h2>
+            </div>
+
 
             <button
                 className={styles.navbar__burger}
