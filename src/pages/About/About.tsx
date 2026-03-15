@@ -9,7 +9,7 @@ export const About = () => {
     return (
         <section className={styles.about} id="About">
             <h2 className={styles.about__title}>About Me</h2>
-A
+
             <p className={styles.about__text}>
                 I’m Dastan, a frontend developer specializing in React and modern web applications.
                 I create responsive, maintainable, and interactive websites.
