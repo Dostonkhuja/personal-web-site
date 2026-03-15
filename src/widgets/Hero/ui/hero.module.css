@@ -113,6 +113,9 @@
 }
 
 @media (max-width: 768px) {
+    .hero {
+        min-height: 50vh;
+    }
     .hero__avatar {
         width: 180px;
         height: 180px;
@@ -129,5 +132,20 @@
     }
     .hero__desc {
         font-size: 16px;
+    }
+    .hero__actions {
+        flex-direction: column; /* buttonlar pastma-past */
+        gap: 12px;
+        align-items: center;    /* markazga joylash */
+    }
+    .hero__btnPrimary,
+    .hero__btnSecondary {
+        padding: 12px 24px;      /* padding kamaytirildi */
+        font-size: 14px;          /* font kichikroq */
+        width: 100%;              /* ekran bo‘ylab kengayadi */
+        max-width: 250px;         /* yon tomondan katta bo‘lishni cheklaydi */
+        text-align: center;
+        margin: 0 auto;           /* markazga joylash */
+        box-sizing: border-box;
     }
 }

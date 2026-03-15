@@ -36,3 +36,9 @@
     color: var(--accent);
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .about {
+        padding: 30px 20px;
+    }
+}

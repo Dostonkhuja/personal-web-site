@@ -10,9 +10,6 @@ export function Hero() {
 
     return (
         <div className={styles.hero} id="home">
-            <div
-                className={styles.hero__background}
-            />
 
             <div className={styles.hero__container}>
                 <div className={styles.hero__avatarContainer}>

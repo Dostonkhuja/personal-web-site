@@ -1,15 +1,59 @@
+/* Projects wrapper */
 .projects {
     padding: 80px 20px;
 }
 
+/* Title */
 .projects__title {
     text-align: center;
     margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 600;
 }
 
+/* Grid layout */
 .projects__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 24px;
-    justify-content: center;
+}
+
+/* Individual project card */
+.project__item {
+    background: var(--bg-section);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* barqaror balandlik */
+    min-height: 320px; /* minimal balandlik */
+    box-sizing: border-box;
+}
+
+.project__item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .projects__list {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        padding: 30px 20px;
+    }
+    .projects__list {
+        grid-template-columns: 1fr; /* 1 column mobile */
+    }
+
+    .project__item {
+        min-height: auto; /* mobile da balandlik avtomatik */
+    }
 }

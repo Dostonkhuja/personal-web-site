@@ -3,45 +3,88 @@ import styles from "./Resume.module.css"
 export const Resume = () => {
     return (
         <section className={styles.resume} id="Resume">
-            <h2 className={styles.title}>My Resume</h2>
-            <p className={styles.text}>
-                Here’s a brief overview of my experience, skills, and education. You can also download my full resume.
-            </p>
+            <h2 className={styles.resume__fTitle}>Resume</h2>
+            <div className={styles.resume__grid}>
 
-            <div className={styles.sections}>
-                <div className={styles.section}>
-                    <h3 className={styles.sectionTitle}>Experience</h3>
-                    <ul className={styles.list}>
-                        <li>Frontend Developer – XYZ Company (2022 - Present)</li>
-                        <li>Freelance Web Developer – Various Clients (2020 - 2022)</li>
-                    </ul>
+
+                <div className={styles.resume__card}>
+                    <h3 className={styles.resume__title}>Experience</h3>
+
+                    <p className={styles.resume__text}>
+                        Frontend Developer – IT Group Open Source Project (Jan 2022)
+                    </p>
+
+                    <p className={styles.resume__text}>
+                        Developed client side hospital management system for patient
+                        registration, appointments and doctor monitoring.
+                    </p>
+
+                    <p className={styles.resume__text}>
+                        Built with React functional components following SOLID principles.
+                    </p>
                 </div>
 
-                <div className={styles.section}>
-                    <h3 className={styles.sectionTitle}>Education</h3>
-                    <ul className={styles.list}>
-                        <li>BSc in Computer Science – ABC University (2016 - 2020)</li>
-                    </ul>
+
+                <div className={styles.resume__card}>
+                    <h3 className={styles.resume__title}>Education</h3>
+
+                    <p className={styles.resume__text}>PDP IT Academy</p>
+                    <p className={styles.resume__text}>Self Study</p>
                 </div>
 
-                <div className={styles.section}>
-                    <h3 className={styles.sectionTitle}>Skills</h3>
-                    <ul className={styles.list}>
-                        <li>React, TypeScript, Tailwind CSS</li>
-                        <li>Responsive Design & UI/UX</li>
-                        <li>Git, REST APIs, Agile workflow</li>
-                    </ul>
+
+                <div className={styles.resume__card}>
+                    <h3 className={styles.resume__title}>Skills</h3>
+
+                    <div className={styles.resume__skills}>
+                        <span>HTML</span>
+                        <span>SCSS</span>
+                        <span>BEM</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Redux</span>
+                        <span>Socket.IO</span>
+                        <span>NodeJS</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>Git</span>
+                        <span>SOLID</span>
+                    </div>
                 </div>
+
+
+                <div className={styles.resume__card}>
+                    <h3 className={styles.resume__title}>Projects</h3>
+
+                    <p className={styles.resume__text}>
+                        Facebook Clone Frontend – Sep 2021
+                    </p>
+
+                    <p className={styles.resume__text}>
+                        social-beatles.netlify.app
+                    </p>
+
+                    <p className={styles.resume__text}>
+                        Built with React using SOLID architecture with UI / BUSINESS / DAL layers.
+                    </p>
+
+                    <p className={styles.resume__text}>
+                        Backend: NodeJS, Express, MongoDB, JWT authentication,
+                        Joi validation, Winston logging, Socket.IO.
+                    </p>
+                </div>
+
             </div>
+
 
             <a
                 href="/resume.pdf"
-                className={styles.btn}
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Dostonkhuja_Resume.pdf"
+                className={styles.resume__button}
             >
                 Download Resume
             </a>
+
         </section>
     )
 }

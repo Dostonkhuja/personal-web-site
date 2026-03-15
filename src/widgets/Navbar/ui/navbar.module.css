@@ -1,27 +1,51 @@
+/* --- Variables based on light/dark theme --- */
+:root {
+    --bg-nav: #ffffff;
+    --text: #111111;
+    --accent: #007bff;
+}
+
+[data-theme="dark"] {
+    --bg-nav: #111111;
+    --text: #f5f5f5;
+    --accent: #00bfff;
+}
+
+/* --- Navbar wrapper --- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
+    padding: 12px 24px;
     background: var(--bg-nav);
     color: var(--text);
     position: sticky;
     top: 0;
     z-index: 100;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05);
 }
 
+/* --- Logo --- */
 .logoLink {
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 
 .logo {
-    height: 60px;
+    height: 40px;
     width: auto;
 }
 
+.navbarLogo {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    color: var(--text);
+    margin-left: 4px;
+}
 
-/* Burger button */
+/* --- Burger button --- */
 .navbar__burger {
     display: none;
     font-size: 1.8rem;
@@ -31,14 +55,14 @@
     color: var(--text);
 }
 
-/* Links container */
+/* --- Links container --- */
 .navbar__right {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* Links list */
+/* --- Links list --- */
 .navbar__list {
     display: flex;
     gap: 20px;
@@ -47,19 +71,28 @@
     padding: 0;
 }
 
-/* Links */
+/* --- Links --- */
 .navbar__link {
     text-decoration: none;
     color: var(--text);
     font-weight: 500;
-    transition: color 0.3s;
+    font-size: 15px;
+    transition: color 0.3s, transform 0.2s;
 }
 
 .navbar__link:hover {
     color: var(--accent);
+    transform: translateY(-1px);
 }
 
-/* Mobile styles */
+/* --- Active link --- */
+.activeLink {
+    color: var(--accent);
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent);
+}
+
+/* --- Mobile styles --- */
 @media (max-width: 768px) {
     .navbar__burger {
         display: block;
@@ -70,15 +103,16 @@
         top: 0;
         right: 0;
         height: 100vh;
-        width: 250px;
+        width: 240px;
         flex-direction: column;
         align-items: flex-start;
-        padding: 64px 16px 16px 16px; /* navbar balandligi + padding */
+        padding: 80px 16px 16px 16px; /* navbar balandligi + padding */
         background: var(--bg-nav);
-        gap: 20px;
+        gap: 16px;
         transform: translateX(100%);
-        transition: transform 0.3s ease;
-        z-index: 99;
+        transition: transform 0.35s ease-in-out;
+        box-shadow: -2px 0 15px rgba(0,0,0,0.1);
+        z-index: 599;
     }
 
     .navbar__right.active {
@@ -92,10 +126,27 @@
 
     .navbar__link {
         width: 100%;
+        font-size: 16px;
+        padding: 10px 0;
     }
-}
-.activeLink {
-    color: var(--accent);           /* hozirgi sahifa rangini asosiy accent bilan beramiz */
-    font-weight: bold;              /* faol linkni ajratish */
-    border-bottom: 2px solid var(--accent);  /* ostiga chiziq qo‘yish */
+
+    .activeLink {
+        border-bottom: none;
+        font-weight: 600;
+    }
+    .logo {
+        height: 30px;
+    }
+
+    .navbarLogo {
+        font-size: 16px;
+        margin-left: 2px;
+    }
+    .navbar__theme {
+        width: 100%;
+        display: flex;
+        justify-content: center;  /* o‘rtaga tortiladi */
+        margin-top: 32px;         /* menu linklaridan biroz pastga */
+        padding-bottom: 20px;     /* pastga biroz joy */
+    }
 }

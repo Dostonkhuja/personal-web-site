@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react"
 
 export const useTheme = () => {
-    const [theme, setTheme] = useState<"light" | "dark">("light")
+    // Default holatda dark
+    const [theme, setTheme] = useState<"light" | "dark">("dark")
 
     useEffect(() => {
         document.documentElement.setAttribute("data-theme", theme)

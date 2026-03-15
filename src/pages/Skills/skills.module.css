@@ -62,6 +62,11 @@
 
 /* Tablet */
 @media (max-width: 900px) {
+    .skills {
+        padding: 30px 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
     .skills__grid {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 32px;
