@@ -25,10 +25,18 @@ export const ContactButtons = () => {
             </a>
 
             <a
-                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                onClick={() => {
+                    const link = document.createElement("a")
+                    link.href = `${import.meta.env.BASE_URL}resume.pdf`
+                    link.download = "Dastan_Resume.pdf"
+                    document.body.appendChild(link)
+                    link.click()
+                    document.body.removeChild(link)
+                }}
                 download="Dastan_Resume.pdf"
                 className={styles.button}
                 title="Download Resume"
+
             >
                 <FaDownload />
             </a>

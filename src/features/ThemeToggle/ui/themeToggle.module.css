@@ -1,6 +1,8 @@
 .theme-toggle {
     min-width: 120px;      /* minimal kenglik */
-    max-width: 150px;      /* maksimal kenglik */
+    max-width: 150px;
+    margin-left: 20px;/* maksimal kenglik */
+    margin-right: 10px;/* maksimal kenglik */
     white-space: nowrap;   /* matn qatorini kesmaslik */
     overflow: hidden;
     text-overflow: ellipsis;
@@ -19,4 +21,11 @@
 .theme-toggle:hover {
     background: var(--accent);
     color: var(--bg);
+}
+
+/* mobile yashirish */
+@media (max-width: 768px) {
+    .theme-toggle {
+        margin-right: 0;
+    }
 }

@@ -78,7 +78,14 @@ export const Resume = () => {
 
 
             <a
-                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                onClick={() => {
+                    const link = document.createElement("a")
+                    link.href = `${import.meta.env.BASE_URL}resume.pdf`
+                    link.download = "Dastan_Resume.pdf"
+                    document.body.appendChild(link)
+                    link.click()
+                    document.body.removeChild(link)
+                }}
                 download="Dostonkhuja_Resume.pdf"
                 className={styles.resume__button}
             >
