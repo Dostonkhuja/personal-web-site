@@ -1,0 +1,7 @@
+.appContent {
+    max-width: 1280px;
+    margin: 0 auto; /* markazlashgan */
+    padding: 2rem;  /* chap/o‘ng bo‘sh joy */
+    box-sizing: border-box;
+    text-align: center;
+}

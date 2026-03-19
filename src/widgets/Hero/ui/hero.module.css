@@ -7,10 +7,12 @@
     text-align: center;
     overflow: hidden;
     color: var(--text);
+    background: transparent;
 }
 
 
 .hero__container {
+    background: transparent;
     position: relative;
     z-index: 1;
     max-width: 700px;

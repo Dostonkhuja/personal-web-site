@@ -2,14 +2,18 @@ import {AppRoutes} from "./Routes.tsx";
 import {Navbar} from "../widgets/Navbar";
 import {ContactButtons} from "../widgets/ContacButtons";
 import {Footer} from "../widgets/Footer";
+import styles from './app.module.css'
 
 function App() {
     return (
         <>
-            <ContactButtons />
             <Navbar />
-            <AppRoutes />
+            <div className={styles.appContent}>
+                <ContactButtons />
+                <AppRoutes />
+            </div>
             <Footer />
+
         </>
     )
 }

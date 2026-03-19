@@ -50,11 +50,8 @@ export function Navbar() {
         <nav className={styles.navbar}>
             <div className={styles.navbar}>
                 <a href="/" className={styles.logoLink}>
-                    <img src="/DS_logo.svg" alt="DS Logo" className={styles.logo}/>
+                    <img src={`${import.meta.env.BASE_URL}DS_logo.svg`} alt="DS Logo" className={styles.logo}/>
                 </a>
-                <h2 className={styles.navbarLogo}>
-                    &lt;DastanWorks /&gt;
-                </h2>
             </div>
 
             <button
