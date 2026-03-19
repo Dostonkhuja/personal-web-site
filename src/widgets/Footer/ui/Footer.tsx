@@ -8,7 +8,7 @@ export const Footer = () => {
             <div className={styles.social}>
                 <a href="https://github.com/Dostonkhuja" target="_blank" rel="noopener noreferrer" title="GitHub" className={styles.icon}><FaGithub /></a>
                 <a href="https://t.me/reyx04" target="_blank" rel="noopener noreferrer" title="Telegram" className={styles.icon}><FaTelegramPlane /></a>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" title="Download Resume" className={styles.icon}><FaDownload /></a>
+                <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener noreferrer" title="Download Resume" className={styles.icon}><FaDownload /></a>
             </div>
 
             <div className={styles.email}>Email: <a href="sheraliyevdostonhoja@gmail.com">sheraliyevdostonhoja@gmail.com</a></div>

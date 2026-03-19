@@ -25,7 +25,7 @@ export const ContactButtons = () => {
             </a>
 
             <a
-                href="/resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
                 download="Dastan_Resume.pdf"
                 className={styles.button}
                 title="Download Resume"

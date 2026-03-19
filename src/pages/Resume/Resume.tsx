@@ -78,7 +78,7 @@ export const Resume = () => {
 
 
             <a
-                href="/resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
                 download="Dostonkhuja_Resume.pdf"
                 className={styles.resume__button}
             >
