@@ -19,7 +19,7 @@ export function Hero() {
                 <h1 className={styles.hero__title}>I'm Dastan</h1>
                 <h2 className={styles.hero__role}>&lt;Frontend Developer /&gt;</h2>
                 <p className={styles.hero__desc}>
-                    Crafting modern, scalable apps using React and TypeScript.
+                    I build modern, scalable applications with React and TypeScript, focusing on clean architecture, maintainable code, and responsive, high-performance user interfaces.
                 </p>
 
                 <div className={styles.hero__actions}>

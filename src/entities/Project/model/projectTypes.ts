@@ -3,4 +3,7 @@ export interface projectTypes {
     name: string
     description: string
     link: string
+    source: string
+    image: string
+    technologies: string[]
 }
