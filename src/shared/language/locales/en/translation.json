@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "Hello",
+    "name": "I'm Dastan",
+    "role": "<Frontend Developer />",
+    "desc": "I build modern, scalable applications with React and TypeScript, focusing on clean architecture, maintainable code, and responsive, high-performance user interfaces.",
+    "btn": {
+      "projects": "View Projects",
+      "contact": "Contact"
+    },
+    "avatarAlt": "Dastan"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "theme": {
+    "toggle": {
+      "dark": "🌙 Dark Mode",
+      "light": "☀️ Light Mode",
+      "aria": "Toggle theme"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "text": "When I was a child, computers felt extremely interesting to me.\nFor a kid playing outside, it was like another world.\nI got closer to it through games. Later, I started trying to understand what was inside.\n\nBack then, the internet and computers were not like today.\n\npayments were a new thing\nthe internet was expensive and slow\nsoftware and games were distributed via discs\n\nIn that environment, I became an apprentice at a small computer service.\nThat was my first real school.\n\nIn the service:\n\nI installed Windows\nI configured computers\nI burned and copied discs\nI worked with Paynet and internet services\n\nThese services were in high demand at that time.\nPeople even came for simple tasks.\nI learned technology in practice there.\n\nLater, during college, I opened a small photo studio.\nThat was my first independent experience.\n\nI:\n\ntook ID photos\nedited videos\nconfigured USB modems\ncopied content from cassette to disc\n\nThrough this work, I learned not only technical skills but also how to work with clients.\n\nAt that time, I was working with technology, but programming had not yet entered my life.\nThe reason was simple — there was no such environment.\n\nDuring the quarantine period, I came across programming courses on YouTube.\nFrom that moment, I started learning this field seriously.\n\nI completed an online course:\n\nHTML\nCSS\nJavaScript\n\nDuring the course, I showed good results and was offered a position as a mentor assistant.\nIt was an important recognition for me.\nBut I could not take the opportunity because of distance.\n\nThen I switched to self-study.\n\nI:\n\nlearned React and Redux\nunderstood backend with Node.js\nbuilt independent projects\ncompleted a full stack project\n\nThis process was difficult.\nThere was no clear path.\nI had to learn many things on my own.\n\nI started looking for a job. I even passed all interviews.\nBut I was not hired because I was a part-time student.\n\nThat was a difficult situation.\n\nAfter some time, I started looking at programming differently.\nNow it is not just work for me.\n\nI started coding again.\n\nNow:\n\nI enjoy the process\nI continue learning\n\nI have seen both the old internet era and today’s fast technology era.\n\nThat is why I know one thing for sure:\n\nKnowledge learned in difficult conditions does not disappear easily.\n\nI am still in the middle of the journey.\nAnd I continue.",
+    "button": "See my Skills",
+    "showMore": "Show more",
+    "showLess": "Show less"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "text": "Feel free to reach out for collaborations, freelance projects, or just to say hi!",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "error": "Something went wrong"
+  },
+  "resume": {
+    "title": "Resume",
+    "download": "Download Resume"
+  }
+}

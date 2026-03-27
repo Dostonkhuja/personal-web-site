@@ -1,4 +1,5 @@
 import styles from "./themeToggle.module.css"
+import { useTranslation } from "react-i18next"
 
 interface ThemeToggleProps {
     currentTheme: "light" | "dark"
@@ -6,13 +7,17 @@ interface ThemeToggleProps {
 }
 
 export function ThemeToggle({ currentTheme, toggleTheme }: ThemeToggleProps) {
+    const { t } = useTranslation()
+
     return (
         <button
             className={styles["theme-toggle"]}
             onClick={toggleTheme}
-            aria-label="Toggle theme"
+            aria-label={t("theme.toggle.aria")}
         >
-            {currentTheme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
+            {currentTheme === "light"
+                ? t("theme.toggle.dark")
+                : t("theme.toggle.light")}
         </button>
     )
 }

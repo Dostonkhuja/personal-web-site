@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "Salom",
+    "name": "Men Dostonxo'jaman",
+    "role": "<Frontend Developer />",
+    "desc": "Men React va TypeScript bilan zamonaviy va kengaytiriladigan ilovalar yarataman. Toza arxitektura, qo‘llab-quvvatlash oson kod va tez ishlaydigan interfeyslarga e’tibor beraman.",
+    "btn": {
+      "projects": "Loyihalarni ko‘rish",
+      "contact": "Aloqa"
+    },
+    "avatarAlt": "Dastan"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Men haqimda",
+    "projects": "Loyihalar",
+    "skills": "Ko‘nikmalar",
+    "contact": "Aloqa",
+    "resume": "Rezyume"
+  },
+  "theme": {
+    "toggle": {
+      "dark": "🌙 Tungi rejim",
+      "light": "☀️ Kunduzgi rejim",
+      "aria": "Rejimni almashtirish"
+    }
+  },
+  "about": {
+    "title": "Men haqimda",
+    "text": "Bolaligimda kompyuter men uchun o'ta qiziq narsa edi. Ko‘chada o‘ynab yurgan bola uchun u boshqa dunyo edi. O‘yinlar orqali yaqinlashdim. Keyin esa ichida nima borligini tushunishga harakat qildim.\n\nO‘sha paytlar internet ham, kompyuter ham bugungidek emas edi.\n\n- to‘lov qilish yangilik edi  \n- internet qimmat va sekin edi  \n- disklar orqali dastur va o‘yinlar tarqatilardi  \n\nShu davrning ichida men kichik kompyuter servisiga shogird bo‘ldim. Bu men birinchi real maktabim edi.\n\nServisda:\n\n- Windows o‘rnatardim  \n- kompyuterlarni sozlardim  \n- disk yozardim va nusxa ko‘chirar edim  \n- Paynet va internet xizmatlari bilan ishlardim  \n\nBu xizmatlar o‘sha paytda juda talabgir edi. Odamlar oddiy ishlar uchun ham servisga kelardi. Men esa shu yerda texnologiyani amalda o‘rgandim.\n\nKeyinchalik kollej davrida o‘z kichik foto studiyamni ochdim. Bu mening birinchi mustaqil tajribam edi.\n\nMen:\n\n- hujjat uchun rasmga olardim  \n- videolarni montaj qilardim  \n- USB modemlarni sozlardim  \n- kassetadan diskka yozardim  \n\nBu ishlar orqali men nafaqat texnik, balki mijoz bilan ishlashni ham o‘rgandim.\n\nShu paytgacha texnologiya bilan ishlayotgan edim, lekin dasturlash hali hayotimga kirib kelmagan edi. Sababi oddiy —bunday muhit yo‘q edi.\n\nKarantin davrida YouTube orqali dasturlash kurslariga duch keldim. Shu paytdan boshlab bu sohani jiddiy o‘rganishni boshladim.\n\nMen onlayn kursni tugatdim:\n\n- HTML  \n- CSS  \n- JavaScript  \n\nKurs davomida yaxshi natija ko‘rsatganim uchun menga mentor assistenti bo‘lish taklifi berildi. Bu men uchun muhim baho edi. Lekin masofa sabab bu imkoniyatdan foydalana olmadim.\n\nKeyin mustaqil o‘rganishga o‘tdim.\n\nMen:\n\n- React va Redux’ni o‘rgandim  \n- Node.js orqali backend’ni tushundim  \n- mustaqil loyihalar qildim  \n- full stack loyiha yakunladim  \n\nBu jarayon qiyin kechdi. Tayyor yo‘l yo‘q edi. Ko‘p narsani o‘zim o‘rgandim.\n\nIsh qidirishni boshladim. Hatto barcha suhbatlardan o‘tdim. Lekin sirtqi talaba bo‘lganim sabab ishga qabul qilinmadim.\n\nBu og‘ir vaziyat edi.\n\nOradan vaqt o‘tib, men dasturlashga boshqacha qaray boshladim. Endi bu men uchun faqat ish emas.\n\nYana kod yozishni boshladim.\n\nEndi:\n\n- jarayondan zavq olaman  \n- o‘rganishni davom ettiraman  \n\nMen eski internet davrini ham, hozirgi tezkor texnologiyalar davrini ham ko‘rdim.\n\nShu sababli bitta narsani aniq bilaman:\n\nQiyin sharoitda o‘rganilgan bilim tez yo‘qolmaydi.\n\nMen hali yo‘lning o‘rtasidaman. Va davom etyapman.",
+    "button": "Ko‘nikmalarimni ko‘rish",
+    "showMore": "Ko‘proq ko‘rish",
+    "showLess": "Kamroq ko‘rish"
+  },
+  "projects": {
+    "title": "Loyihalar"
+  },
+  "skills": {
+    "title": "Ko‘nikmalar"
+  },
+  "contact": {
+    "title": "Aloqa",
+    "text": "Hamkorlik, freelance loyiha yoki oddiy salom uchun yozishingiz mumkin.",
+    "name": "Ismingiz",
+    "email": "Email manzilingiz",
+    "message": "Xabaringiz",
+    "send": "Yuborish",
+    "sending": "Yuborilmoqda...",
+    "error": "Xatolik yuz berdi"
+  },
+  "resume": {
+    "title": "\nRezyume\n",
+    "download": "Rezyume yuklab olish"
+  }
+}

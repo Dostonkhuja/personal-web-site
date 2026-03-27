@@ -28,6 +28,7 @@
 
 /* --- Logo --- */
 .logoLink {
+    padding-left: 15px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -38,6 +39,7 @@
     width: auto;
 }
 
+
 /* --- Burger button --- */
 .navbar__burger {
     display: none;
@@ -47,6 +49,7 @@
     cursor: pointer;
     color: var(--text);
 }
+
 
 /* --- Links container --- */
 .navbar__right {

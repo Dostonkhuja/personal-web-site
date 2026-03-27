@@ -4,12 +4,15 @@ import { ThemeToggle, useTheme } from "../../../features/ThemeToggle"
 import { navLinks } from "../../../entities/Navbar"
 import styles from "./navbar.module.css"
 import { useClickSound } from "../../../features/clickSound/useClickSound"
+import {LanguageSwitcher} from "../../../shared/language";
+import {useTranslation} from "react-i18next";
 
 export function Navbar() {
     const { theme, toggleTheme } = useTheme()
     const [menuOpen, setMenuOpen] = useState(false)
     const [activeLink, setActiveLink] = useState(navLinks[0].to)
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
+    const { t } = useTranslation()
 
     const playSound = useClickSound()
     const linkProps = { smooth: true, duration: 500, spy: true }
@@ -70,10 +73,12 @@ export function Navbar() {
                 </a>
             </div>
 
+
             {/* MOBILE: toggle + burger */}
             {isMobile && (
                 <div className={styles.navbar__mobileActions}>
                     <ThemeToggle currentTheme={theme} toggleTheme={toggleTheme}/>
+                    <LanguageSwitcher />
                     <button
                         className={styles.navbar__burger}
                         onClick={() => {
@@ -84,8 +89,10 @@ export function Navbar() {
                     >
                         {menuOpen ? "✕" : "☰"}
                     </button>
+
                 </div>
             )}
+
 
 
             {/* MENU */}
@@ -103,15 +110,17 @@ export function Navbar() {
                                     setMenuOpen(false)
                                 }}
                             >
-                                {link.label}
+                                {t(`nav.${link.key}`)}
                             </Link>
                         </li>
                     ))}
                 </ul>
             </div>
+
             {/* DESKTOP: toggle */}
             {!isMobile && (
                 <div className={styles.navbar__themeDesktop}>
+                    <LanguageSwitcher />
                     <ThemeToggle currentTheme={theme} toggleTheme={toggleTheme}/>
                 </div>
             )}

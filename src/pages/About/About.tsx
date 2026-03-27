@@ -1,33 +1,43 @@
+import { useState } from "react"
 import { scroller } from "react-scroll"
 import styles from "./About.module.css"
+import { useTranslation } from "react-i18next"
 
 export const About = () => {
+    const { t } = useTranslation()
+    const [expanded, setExpanded] = useState(false)
+
     const handleScrollToSkills = () => {
         scroller.scrollTo("Skills", { duration: 500, smooth: true })
     }
 
     return (
         <section className={styles.about} id="About">
-            <h2 className={styles.about__title}>About Me</h2>
+            <h2 className={styles.about__title}>{t("about.title")}</h2>
 
-            <p className={styles.about__text}>
-                I’m Dastan, a frontend developer specializing in React and modern web applications.
-                I create responsive, maintainable, and interactive websites.
-            </p>
+            <div className={`${styles.textWrapper} ${expanded ? styles.open : ""}`}>
+                <p className={styles.about__text}>
+                    {t("about.text")}
+                </p>
 
-            <p className={styles.about__text}>
-                Experienced with React, TypeScript, and Tailwind CSS. Completed several projects
-                ranging from small portfolio sites to larger web apps.
-            </p>
+                {!expanded && <div className={styles.fade} />}
+            </div>
 
-            <p className={styles.about__text}>
-                I enjoy turning complex problems into clean, maintainable code, and I’m passionate
-                about learning new technologies and improving user experiences.
-            </p>
+            <div className={styles.buttons}>
+                <button
+                    className={styles.showMore}
+                    onClick={() => setExpanded(prev => !prev)}
+                >
+                    {expanded ? t("about.showLess") : t("about.showMore")}
+                </button>
 
-            <button className={styles.about__btn} onClick={handleScrollToSkills}>
-                See my Skills
-            </button>
+                <button
+                    className={styles.about__btn}
+                    onClick={handleScrollToSkills}
+                >
+                    {t("about.button")}
+                </button>
+            </div>
         </section>
     )
 }

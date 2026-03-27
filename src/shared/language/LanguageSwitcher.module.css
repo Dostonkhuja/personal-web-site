@@ -1,0 +1,47 @@
+.lang-switcher {
+    position: relative;
+    width: 50px;
+    margin-left: 12px;
+}
+
+.lang-switcher__button {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.lang-switcher__dropdown {
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.lang-switcher__item {
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.lang-switcher__item:hover {
+    background: var(--bg-section);
+}
+
+.lang-switcher__item--active {
+    background: var(--bg-section);
+}
+
+.emoji {
+    font-family: system-ui, "Apple Color Emoji", "Segoe UI Emoji";
+}

@@ -1,8 +1,8 @@
 export const navLinks = [
-    { to: "Home", label: "Home" },
-    { to: "About", label: "About" },
-    { to: "Projects", label: "Projects" },
-    { to: "Skills", label: "Skills" },
-    { to: "Contact", label: "Contact" },
-    { to: "Resume", label: "Resume" }
-]
+    { to: "Home", key: "home" },
+    { to: "About", key: "about" },
+    { to: "Projects", key: "projects" },
+    { to: "Skills", key: "skills" },
+    { to: "Contact", key: "contact" },
+    { to: "Resume", key: "resume" }
+];

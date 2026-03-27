@@ -1,8 +1,10 @@
 import styles from "./Hero.module.css";
 import profile from "../../../shared/assets/myphoto.png";
 import { scroller } from "react-scroll"
+import { useTranslation } from 'react-i18next'
 
 export function Hero() {
+    const { t } = useTranslation()
 
     const handleScroll = (target: string) => {
         scroller.scrollTo(target, { duration: 500, smooth: true })
@@ -15,17 +17,16 @@ export function Hero() {
                 <div className={styles.hero__avatarContainer}>
                     <img src={profile} alt="Dastan" className={styles.hero__avatar} />
                 </div>
-
-                <h1 className={styles.hero__title}>I'm Dastan</h1>
-                <h2 className={styles.hero__role}>&lt;Frontend Developer /&gt;</h2>
+                <h1 className={styles.hero__title}>{t('hero.name')}</h1>
+                <h2 className={styles.hero__role}>&lt;{t('hero.role')} /&gt;</h2>
                 <p className={styles.hero__desc}>
-                    I build modern, scalable applications with React and TypeScript, focusing on clean architecture, maintainable code, and responsive, high-performance user interfaces.
+                    {t('hero.desc')}
                 </p>
 
                 <div className={styles.hero__actions}>
 
-                    <div className={styles.hero__btnPrimary}  onClick={() => handleScroll("Projects")}>View Projects</div>
-                    <div  className={styles.hero__btnSecondary} onClick={() => handleScroll("Contact")}>Contact</div>
+                    <div className={styles.hero__btnPrimary}  onClick={() => handleScroll("Projects")}> {t('hero.btn.projects')}</div>
+                    <div  className={styles.hero__btnSecondary} onClick={() => handleScroll("Contact")}> {t('hero.btn.contact')}</div>
                 </div>
             </div>
         </div>

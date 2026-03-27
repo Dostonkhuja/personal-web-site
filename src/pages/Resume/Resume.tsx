@@ -1,9 +1,12 @@
 import styles from "./Resume.module.css"
+import {useTranslation} from "react-i18next";
 
 export const Resume = () => {
+   const {t} = useTranslation()
+
     return (
         <section className={styles.resume} id="Resume">
-            <h2 className={styles.resume__fTitle}>Resume</h2>
+            <h2 className={styles.resume__fTitle}>{t("resume.title")}</h2>
             <div className={styles.resume__grid}>
 
 
@@ -89,7 +92,7 @@ export const Resume = () => {
                 download="Dostonkhuja_Resume.pdf"
                 className={styles.resume__button}
             >
-                Download Resume
+                {t('resume.download')}
             </a>
 
         </section>

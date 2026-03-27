@@ -1,36 +1,36 @@
 import type {projectTypes} from "./projectTypes.ts";
 import backend from "../../../shared/assets/backEND.jpg"
 import frontend from "../../../shared/assets/SN.jpg"
-import mock from "../../../shared/assets/mockProject.jpg"
+// import mock from "../../../shared/assets/mockProject.jpg"
 
 export const projects: projectTypes[] = [
-    {
-        id: 1,
-        name: "project A. for example (E-commerce App)",
-        description: "Online store using React & TS",
-        link: "#",
-        source: "https://github.com/your-repo",
-        image: mock,
-        technologies: ["React", "TypeScript", "CSS"]
-    },
-    {
-        id: 2,
-        name: "project B. for example (Task Manager)",
-        description: "Manage tasks with React Hooks",
-        link: "#",
-        source: "https://github.com/your-repo",
-        image: mock,
-        technologies: ["React", "Hooks", "LocalStorage"]
-    },
-    {
-        id: 3,
-        name: "project C. for example (Weather App)",
-        description: "Weather forecast using API",
-        link: "#",
-        source: "https://github.com/your-repo",
-        image: mock,
-        technologies: ["React", "API", "CSS"]
-    },
+    // {
+    //     id: 1,
+    //     name: "project A. for example (E-commerce App)",
+    //     description: "Online store using React & TS",
+    //     link: "#",
+    //     source: "https://github.com/your-repo",
+    //     image: mock,
+    //     technologies: ["React", "TypeScript", "CSS"]
+    // },
+    // {
+    //     id: 2,
+    //     name: "project B. for example (Task Manager)",
+    //     description: "Manage tasks with React Hooks",
+    //     link: "#",
+    //     source: "https://github.com/your-repo",
+    //     image: mock,
+    //     technologies: ["React", "Hooks", "LocalStorage"]
+    // },
+    // {
+    //     id: 3,
+    //     name: "project C. for example (Weather App)",
+    //     description: "Weather forecast using API",
+    //     link: "#",
+    //     source: "https://github.com/your-repo",
+    //     image: mock,
+    //     technologies: ["React", "API", "CSS"]
+    // },
     {
         id: 4,
         name: "Social network backend",
