@@ -1,18 +1,18 @@
 import type {projectTypes} from "./projectTypes.ts";
 import backend from "../../../shared/assets/backEND.jpg"
 import frontend from "../../../shared/assets/SN.jpg"
-// import mock from "../../../shared/assets/mockProject.jpg"
+import eCommerce from "../../../shared/assets/e-commerce.jpg"
 
 export const projects: projectTypes[] = [
-    // {
-    //     id: 1,
-    //     name: "project A. for example (E-commerce App)",
-    //     description: "Online store using React & TS",
-    //     link: "#",
-    //     source: "https://github.com/your-repo",
-    //     image: mock,
-    //     technologies: ["React", "TypeScript", "CSS"]
-    // },
+    {
+        id: 1,
+        name: "E-commerce App",
+        description: "This project demonstrates my ability to build scalable frontend systems, not just screens. I implemented a production-style e-commerce frontend with clear feature boundaries (FSD), predictable state flow (Redux Toolkit), and reusable UI patterns. The codebase is structured for growth: domain-oriented modules, typed API integration, cart persistence/synchronization, and clean component composition. Overall, it reflects strong ownership of architecture, maintainability, and real-world product thinking.",
+        link: "https://dostonkhuja.github.io/e-commerce",
+        source: "https://github.com/Dostonkhuja/e-commerce",
+        image: eCommerce,
+        technologies: ["React", "TypeScript", "CSS","FSD DESIGN","Redux toolkit"]
+    },
     // {
     //     id: 2,
     //     name: "project B. for example (Task Manager)",

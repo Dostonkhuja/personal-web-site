@@ -18,7 +18,7 @@ export function Hero() {
                     <img src={profile} alt="Dastan" className={styles.hero__avatar} />
                 </div>
                 <h1 className={styles.hero__title}>{t('hero.name')}</h1>
-                <h2 className={styles.hero__role}>&lt;{t('hero.role')} /&gt;</h2>
+                <h2 className={styles.hero__role}>{t('hero.role')}</h2>
                 <p className={styles.hero__desc}>
                     {t('hero.desc')}
                 </p>
